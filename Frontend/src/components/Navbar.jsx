@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../utils/AuthContext';
-import logo from '../images/logo.png'
+import logo from '../images/logo.png';
+import defaultProfile from '../../dist/assets/default-profile.png';
 
 const Navbar = () => {
   const { user, logoutUser } = useAuth() || {};
-  const defaultProfilePic = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y";
 
   return (
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         
-        <div className="inline-flex items-center space-x-2 pt-3.5 pb-3.5">
+        <div className="inline-flex items-center space-x-2">
           <Link to="/">
-            <img src={logo} alt="Logo" className="w-44 max-md:w-28 cursor-pointer" />
+            <img src={logo} alt="Logo"  className="w-64 h-17 max-md:w-36 max-md:h-16 cursor-pointer transform hover:scale-105 transition-transform duration-200 object-contain -mt-20 -mb-24" />
           </Link>
         </div>
         
@@ -36,7 +36,7 @@ const Navbar = () => {
           {user ? (
             <div className="flex items-center gap-2">
               <img 
-                src={user.picture || defaultProfilePic} 
+                src={defaultProfile} 
                 alt="Profile" 
                 className="w-8 h-8 rounded-full object-cover"
               />

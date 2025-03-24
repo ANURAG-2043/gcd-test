@@ -1,28 +1,30 @@
-import mysql2 from 'mysql2/promise';
+import mysql2 from 'mysql2';  // Remove /promise from import
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const pool = mysql2.createPool({
     host: process.env.DB_HOST,
-    user:process.env.DB_USER,
-    password:process.env.DB_PASSWORD,
-    database:process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
     port: process.env.DB_PORT,
-    ssl: {
+    ssl: process.env.DB_SSL === 'true' ? {
         rejectUnauthorized: true
-    }
-}).promise();
+    } : false
+});
 
-const checkConnection=async()=>{
-    try{
-        const connection = await pool.getConnection();
-        console.log("Database Connection Successfull!!");
+const promisePool = pool.promise();  // Create promise pool separately
+
+const checkConnection = async () => {
+    try {
+        const connection = await promisePool.getConnection();
+        console.log("Database Connection Successful!");
         connection.release();
-    } catch (error){
-        console.log("Error connecting to databse!");
+    } catch (error) {
+        console.log("Error connecting to database!");
         throw error;
     }
 }
 
-export {pool, checkConnection};
+export { promisePool as pool, checkConnection };  // Export promisePool as pool

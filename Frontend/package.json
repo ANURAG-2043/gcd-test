@@ -39,6 +39,9 @@
   "@react-oauth/google": "^0.12.1",
   
     
+  "@rollup/plugin-replace": "^6.0.2",
+  
+    
   "appwrite": "^16.1.0",
   
     
@@ -63,7 +66,10 @@
   "react-icons": "^5.4.0",
   
     
-  "react-router-dom": "^7.1.1"
+  "react-router-dom": "^7.1.1",
+  
+    
+  "rollup-plugin-javascript-obfuscator": "^1.0.4"
   
   },
   
@@ -95,6 +101,9 @@
   
     
   "gh-pages": "^6.3.0",
+  
+    
+  "javascript-obfuscator": "^4.1.1",
   
     
   "postcss": "^8.4.39",

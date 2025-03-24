@@ -48,12 +48,13 @@ const Login = () => {
 
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
-      // const response = await fetch('http://localhost:3000/api/users/google-login', {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/google-login`, {  
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify({ credential: credentialResponse.credential }),
       });
 
@@ -63,9 +64,11 @@ const Login = () => {
         await loginUser(data.user);
         navigate('/', { replace: true });
       } else {
+        console.error('Google login failed:', data);
         setError('Google login failed');
       }
     } catch (err) {
+      console.error('Google login error:', err);
       setError('Something went wrong with Google login');
     }
   };
@@ -126,10 +129,16 @@ const Login = () => {
                 console.error('Login Failed');
                 setError('Google login failed');
               }}
+              useOneTap={false}
               flow="implicit"
+              auto_select={false}
               type="standard"
               theme="filled_blue"
+              size="large"
+              text="signin_with"
               shape="rectangular"
+              width="250"
+              locale="en"
             />
           </div>
         </div>
