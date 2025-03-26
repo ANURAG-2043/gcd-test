@@ -8,13 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: [
-        'https://gcd-test-o1rb8sp98-anurag2043s-projects.vercel.app',
-        'http://localhost:5173'
-    ],
+    origin: ['https://gcd-test.vercel.app'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
+    exposedHeaders: ['Content-Range', 'X-Content-Range']
 }));
 app.use(express.json());
 app.use('/api/users', userRoutes);  // Added forward slash before 'api'
