@@ -6,7 +6,7 @@ const AboutUs = () => {
   }, []);
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center px-6 lg:px-16 max-w-4xl">
+      <div className="text-center px-6 lg:px-16 max-w-4xl mb-20">
         <h1 className="text-4xl font-extrabold mb-10 text-gray-800">About Us</h1>
         <p className="text-lg leading-8 text-gray-700">
           Welcome to <strong>GeoCityDatabase</strong>, your premier source for comprehensive city characteristics

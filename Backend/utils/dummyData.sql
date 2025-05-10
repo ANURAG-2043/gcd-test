@@ -1,0 +1,33 @@
+INSERT INTO users (
+    name,
+    email,
+    company_name,
+    address,
+    address_line2,
+    city_name,
+    state_name,
+    postcode,
+    country,
+    phone,
+    fax,
+    newsletter,
+    mobile,
+    password,
+    ip_address
+) VALUES (
+    'Rathesh',
+    'ratheshn@chergee.com',
+    'Chergee',
+    '123 Main Street',
+    'Suite 456',
+    'Mumbai',
+    'Maharashtra',
+    '400001',
+    'India',
+    '+91 9876543210',
+    '',
+    true,
+    '+91 9876543210',
+    '$2b$10$dummyhashedpassword',
+    '127.0.0.1'
+);

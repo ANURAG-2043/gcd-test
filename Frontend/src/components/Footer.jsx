@@ -23,7 +23,7 @@ class Footer extends PureComponent {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6  max-w-6xl mx-auto px-5 mr-10">
             <div>
               <h3 className="text-xl font-semibold mb-4">Site Links</h3>
               <ul className="space-y-2">

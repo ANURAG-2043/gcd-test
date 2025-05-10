@@ -31,6 +31,7 @@ import MajorCitiesEdition from './pages/products/major_cities'
 import CustomEdition from './pages/products/Custom'
 import { AuthProvider } from './utils/AuthContext';
 import { GoogleOAuthProvider } from '@react-oauth/google';
+import MyAccount from './pages/MyAccount';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />}/>
           <Route path="/contact-us" element={<ContactUs />}/>
           <Route path="/free-support" element={<FreeSupport />}/>
+          <Route path="/my-account" element={<MyAccount/>}/>
 
           <Route path="/register" element={<Register />}/>
           <Route path="/login" element={<Login />}/>

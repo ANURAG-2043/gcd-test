@@ -7,7 +7,7 @@ const FreeSupport = () => {
   
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
+      <div className="text-center mb-20">
         <h2 className="text-2xl font-semibold my-6">Free Support</h2>
         <p className="text-gray-700">Feel free to reach out to us for more information.</p>
         <div className="my-8">
