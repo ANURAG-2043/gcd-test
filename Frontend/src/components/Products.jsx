@@ -19,10 +19,9 @@ class Products extends PureComponent {
           <h1 className="text-center text-4xl font-reg max-md:text-2xl max-md:py-4 font-medium py-1 pt-9">
             Our Products
           </h1>
-          <div className="grid grid-cols-4 gap-8 place-items-center mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center mx-auto max-w-5xl px-4">
                     <div className="product_images text-center">
-                      <img src={free_img} alt="Free Edition" className="w-[180px] h-[210px] "
-                      />
+                      <img src={free_img} alt="Free Edition" className="w-[180px] h-[210px] object-contain" />
                       <Link to="/free" className="text-blue-500 hover:underline mt-2 block">
                         <p>
                           <span>Free</span><br />
@@ -31,16 +30,15 @@ class Products extends PureComponent {
                       </Link>
                     </div>
                     <div className="product_images text-center">
-                      <img src={basic_img} alt="Basic Edition" className="w-[180px] h-[210px]"
-                      />
-                        <Link to="/essential" className="text-blue-500 hover:underline mt-2 block">
-                          <p>
-                            <span>Essential</span><br />
-                            <span>GeoCityDatabase</span>
-                          </p>
-                        </Link>
-                      </div>
-                      <div className="product_images text-center">
+                      <img src={basic_img} alt="Basic Edition" className="w-[180px] h-[210px] object-contain" />
+                      <Link to="/essential" className="text-blue-500 hover:underline mt-2 block">
+                        <p>
+                          <span>Essential</span><br />
+                          <span>GeoCityDatabase</span>
+                        </p>
+                      </Link>
+                    </div>
+                    <div className="product_images text-center">
                         <img src={premium_img} alt="Premium Edition" className="w-[180px] h-[210px]" />
                         <Link to="/exclusive" className="text-blue-500 hover:underline mt-2 block">
                           <p>

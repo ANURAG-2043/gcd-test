@@ -9,10 +9,11 @@ const MyAccount = () => {
 
   useEffect(() => {
     // Redirect to login if not authenticated
-    if (!user) {
-      navigate('/login');
-      return;
-    }
+
+    // if (!user) {
+    //   navigate('/login');
+    //   return;
+    // }
     
     // Scroll to top on component mount
     window.scrollTo(0, 0);
@@ -68,9 +69,9 @@ const MyAccount = () => {
 
   // Component for Account Overview section
   const AccountOverview = () => (
-    <div className="bg-white p-6 rounded-md shadow">
+    <div className="bg-white p-4 sm:p-6 rounded-md shadow">
       <h2 className="text-xl font-semibold mb-4">Account Overview</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div>
           <h3 className="font-medium text-gray-700">Personal Information</h3>
           <div className="mt-2 space-y-2">

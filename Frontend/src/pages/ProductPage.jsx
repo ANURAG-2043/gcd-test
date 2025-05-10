@@ -18,8 +18,8 @@ const ProductPage  = () => {
   return (
     <>
       <section className="py-8 mt-[100px]">
-      <h1 className="text-center text-4xl font-reg font-bold  max-md:text-2xl max-md:py-4 font-medium py-1 pt-9">Products</h1>
-        <div className="grid grid-cols-4 gap-8 place-items-center mx-auto max-w-6xl">
+      <h1 className="text-center text-4xl font-reg font-bold max-md:text-2xl max-md:py-4 font-medium py-1 pt-9">Products</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center mx-auto max-w-6xl px-4">
           <div className="product_images text-center">
             <img src={free_img} alt="Free Edition" className="w-[180px] h-[210px] "
             />
