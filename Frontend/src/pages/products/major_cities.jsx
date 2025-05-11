@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import { account } from "../../utils/appwrite";
 import { Navigate } from "react-router-dom";
-
-import  major_cities_img from "../../images/productImages/major-cities.png"
-// import s1 from "../../images/steps/free_steps_imgs/step-1.png";
-// import s2 from "../../images/steps/free_steps_imgs/step2.png";
-// import s3 from "../../images/steps/free_steps_imgs/step-3.png";
-// import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import major_cities_img from "../../images/productImages/major-cities.png";
+import ProductsMenu from "../../components/ProductsMenu";
 
 export default function MajorCities() {
   useEffect(() => {
@@ -53,31 +48,39 @@ export default function MajorCities() {
   // }
   return (
     <>
-      <div className="container mt-24 mx-auto px-4 lg:px-20">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-          <div className="flex justify-center w-full lg:w-auto">
-            <img
-              src={major_cities_img} 
-              alt="Titanium Edition Database"
-              className="w-full max-w-[250px] lg:max-w-[300px] h-auto object-contain"
-            />
+      <div className="container mt-24 mx-auto px-4 lg:px-8 w-full mr-10 mt-[200px]">
+        <div className="flex flex-col lg:flex-row items-start gap-10">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:w-3/4">
+            <div className="flex justify-center w-full lg:w-auto">
+              <img
+                src={major_cities_img} 
+                alt="Titanium Edition Database"
+                className="w-full max-w-[300px] h-[300px] object-contain"
+              />
+            </div>
+            <div className="text-center lg:text-left w-full lg:w-1/2">
+              <h2 className="text-xl lg:text-2xl font-semibold">Major Cities GeoCityDatabase – with utf8</h2>
+              <h1 className="text-3xl lg:text-4xl font-bold text-blue-600">$1249.99</h1>
+              <p className="my-4 text-gray-700 text-sm lg:text-base">
+                Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name, 
+                state/province (ADM1), latitude, longitude, country code.
+              </p>
+              <p className="text-gray-600 text-sm lg:text-base">Latest release: December, 2025</p>
+              <br />
+              <p className="font-bold text-red-600">This product is launching soon!</p>
+              <button
+                className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4 w-full lg:w-auto"
+                onClick={handleNotifyMeClick}
+              >
+                Notify Me
+              </button>
+            </div>
           </div>
-          <div className="text-center lg:text-left w-full lg:w-1/2">
-            <h2 className="text-xl lg:text-2xl font-semibold">Major Cities GeoCityDatabase – with utf8</h2>
-            <h1 className="text-3xl lg:text-4xl font-bold text-blue-600">$1249.99</h1>
-            <p className="my-4 text-gray-700 text-sm lg:text-base">
-              Database of worldwide cities in text format suitable for any applications requiring a comprehensive list of cities name, 
-              state/province (ADM1), latitude, longitude, country code.
-            </p>
-            <p className="text-gray-600 text-sm lg:text-base">Latest release: December, 2025</p>
-            <br />
-            <p className="font-bold text-red-600">This product is launching soon!</p>
-            <button
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4 w-full lg:w-auto"
-              onClick={handleNotifyMeClick}
-            >
-              Notify Me
-            </button>
+          
+          <div className="lg:w-1/3 lg:sticky lg:top-10">
+          <div className="w-full lg:w-[70rem]">
+              <ProductsMenu />
+            </div>
           </div>
         </div>
       </div>

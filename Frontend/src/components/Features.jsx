@@ -41,8 +41,6 @@ class Features extends PureComponent {
                 <u><b>Signup free to get free databases</b></u>
             </span>
           </div>
-¯
-          
             </>
         )
     }

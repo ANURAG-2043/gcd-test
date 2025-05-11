@@ -6,6 +6,7 @@ import s1 from "../../images/steps/free_steps_imgs/step-1.png";
 import s2 from "../../images/steps/free_steps_imgs/step2.png";
 import s3 from "../../images/steps/free_steps_imgs/step-3.png";
 import s4 from "../../images/steps/free_steps_imgs/step-4.png";
+import ProductsMenu from "../../components/ProductsMenu";
 
 export default function Free() {
   const { user } = useAuth() || {};
@@ -26,36 +27,45 @@ export default function Free() {
 
   return (
     <>
-      <div className="container mt-24 mx-auto px-4 lg:px-20">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-          <div className="flex justify-center w-full lg:w-auto">
-            <img
-              src={free_img}
-              alt="Free Cities Database"
-              className="w-full max-w-[250px] lg:max-w-[300px] h-auto object-contain"
-            />
+      <div className="container mt-24 mx-auto px-4 lg:px-8 w-full mr-10 mt-[200px]">
+        <div className="flex flex-col lg:flex-row items-start gap-10">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:w-3/4">
+            <div className="flex justify-center w-full lg:w-auto">
+              <img
+                src={free_img}
+                alt="Free Cities Database"
+                className="w-full max-w-[300px] h-[300px] object-contain"
+              />
+            </div>
+            <div className="text-center lg:text-left w-full lg:w-1/2">
+              <h2 className="text-xl lg:text-2xl font-semibold">Free GeoCityDatabase</h2>
+              <h1 className="text-3xl lg:text-4xl font-bold text-blue-600">FREE</h1>
+              <p className="my-4 text-gray-700 text-sm lg:text-base">
+                Free database of worldwide cities in text format suitable for any applications requiring a comprehensive list
+                of cities and country code. It is a subset of the paid edition of GeoDataSource World Cities Database Basic,
+                Premium, Gold, Platinum, Titanium Edition.
+              </p>
+              <p className="text-gray-600 text-sm lg:text-base">Latest release: December, 2025</p>
+              <div className="mt-6">
+                <button
+                  className="bg-blue-500 text-white py-3 px-8 rounded-lg hover:bg-blue-600 transition-colors duration-200 w-full lg:w-auto text-base font-medium"
+                  onClick={handleDownloadClick}
+                >
+                  Download Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="text-center lg:text-left w-full lg:w-1/2">
-            <h2 className="text-xl lg:text-2xl font-semibold">Free GeoCityDatabase</h2>
-            <h1 className="text-3xl lg:text-4xl font-bold text-blue-600">FREE</h1>
-            <p className="my-4 text-gray-700 text-sm lg:text-base">
-              Free database of worldwide cities in text format suitable for any applications requiring a comprehensive list
-              of cities and country code. It is a subset of the paid edition of GeoDataSource World Cities Database Basic,
-              Premium, Gold, Platinum, Titanium Edition.
-            </p>
-            <p className="text-gray-600 text-sm lg:text-base">Latest release: December, 2025</p>
-            <br />
-            <button
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 w-full lg:w-auto"
-              onClick={handleDownloadClick}
-            >
-              Download
-            </button>
+          
+          <div className="lg:w-1/3 lg:sticky lg:top-10">
+            <div className="w-full lg:w-[70rem]">
+              <ProductsMenu />
+            </div>
           </div>
         </div>
       </div>
 
-      <section className="mt-16 lg:mt-20 px-4 lg:px-8">
+      <section className="px-4 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <section className="adv mb-8 lg:mb-12">
             <h2 className="text-xl font-semibold mb-4 text-center lg:ml-[280px] lg:text-left">Advantages</h2>
