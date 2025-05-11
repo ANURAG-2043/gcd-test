@@ -93,7 +93,7 @@ class Footer extends PureComponent {
         </div>
 
           <div className="text-center text-xs mt-6 text-gray-400">
-            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+            &copy; {new Date().getFullYear()} GeoCityDatabase. All rights reserved.
           </div>
         </footer>
       </>
