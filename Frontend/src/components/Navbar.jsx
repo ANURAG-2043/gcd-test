@@ -9,7 +9,7 @@ const Navbar = () => {
   const defaultProfile = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23666' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z'/%3E%3C/svg%3E";
 
   return (
-    <div className="mb-20">
+    <div className="mb-[150px]">
       <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           
@@ -19,7 +19,7 @@ const Navbar = () => {
               <img 
                 src={logo} 
                 alt="Logo" 
-                className="w-68 h-36 max-md:w-48 max-md:h-24 cursor-pointer transform hover:scale-150 transition-transform duration-200 object-contain pt-2" 
+                className="w-68 h-36 max-md:w-48 max-md:h-24 cursor-pointer object-contain pt-2 scale-150" 
               />
             </Link>
           </div>

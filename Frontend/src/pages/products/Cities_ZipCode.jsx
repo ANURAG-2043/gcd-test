@@ -53,45 +53,6 @@ export default function Cities_ZipCode() {
   // }
   return (
     <>
-      
-
-      <div className="container mt-24 mx-auto px-20">
-        <div className="flex items-center justify-center gap-10">
-          <div className="flex justify-center">
-            <img
-              src={titanium_img} 
-              alt="Major Cities Database"
-              className="w-[600px] h-[250px]"
-            />
-          </div>
-          <div>
-            <h2 className="text-2xl font-semibold">Cities ZIPCode
-Database</h2>
-            <h1 className="text-4xl font-bold text-blue-600">$299.99</h1>
-            <p className="my-4 text-gray-700">
-            GeoDataSource™ World Major Cities is a database of worldwide major cities that suitable for any 
-            applications requiring a comprehensive list of country code and name, region/state/province name, 
-            city name, latitude, longitude and ZIP code. Most major cities in the world are included in this 
-            database in TSV (tab separated values) format, and can be easily access or load into a relational 
-            database for lookup.<br />
-            This database enables a web developer to easily implement drop down lists, or any other solutions, 
-            that requires the list of countries, states and cities. Sample codes written in ASP, .NET and PHP 
-            are provided in the package to generate city names drop down list by countries and states.<br/>
-            The sample codes enable a developer to rapidly deploy and utilize this package. Developer can apply this data for 
-            other purposes such as data validation, auto form filling and etcs.
-            </p>
-            <p className="text-gray-600">Latest release: December, 2025</p>
-          <br />
-          <p className="font-bold text-red-600">This product is launching soon!</p>
-          <button
-            className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 mt-4"
-            onClick={handleNotifyMeClick}
-          >
-            Notify Me
-          </button>
-          </div>
-        </div>
-      </div>
       <div className="container mt-24 mx-auto px-4 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <div className="flex justify-center w-full lg:w-auto">

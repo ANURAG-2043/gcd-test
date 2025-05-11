@@ -55,7 +55,7 @@ export default function Essential() {
 
   return (
     <>
-      <div className="container mt-24 mx-auto px-20">
+      {/* <div className="container mt-24 mx-auto px-20">
         <div className="flex items-center justify-center gap-10">
           <div className="flex justify-center">
             <img
@@ -81,7 +81,7 @@ export default function Essential() {
           </button>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container mt-24 mx-auto px-4 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <div className="flex justify-center w-full lg:w-auto">
