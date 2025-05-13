@@ -36,7 +36,7 @@ const ProductsMenu = () => {
       <h1 className="text-2xl font-bold mb-6">Products</h1>
       
       <div className="flex flex-col md:flex-row gap-6">
-        <div className="md:w-1/4">
+        <div className="md:w-1/9">
           <div className="bg-white rounded-md shadow overflow-hidden">
             <div className="border-b px-4 py-3">
               <span className="text-lg font-medium text-gray-700">Products</span>

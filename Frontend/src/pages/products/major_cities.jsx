@@ -48,17 +48,17 @@ export default function MajorCities() {
   // }
   return (
     <>
-      <div className="container mt-24 mx-auto px-4 lg:px-8 w-full mr-10 mt-[200px]">
-        <div className="flex flex-col lg:flex-row items-start gap-10">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:w-3/4">
-            <div className="flex justify-center w-full lg:w-auto">
+      <div className="container mx-auto px-4 py-8 mt-16 max-w-6xl">
+        <div className="flex flex-col lg:flex-row items-center justify-center  gap-10">
+          <div className="w-full lg:w-2/3 flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="flex justify-center">
               <img
                 src={major_cities_img} 
                 alt="Titanium Edition Database"
                 className="w-full max-w-[300px] h-[300px] object-contain"
               />
             </div>
-            <div className="text-center lg:text-left w-full lg:w-1/2">
+            <div className="text-center md:text-left w-full md:max-w-md">
               <h2 className="text-xl lg:text-2xl font-semibold">Major Cities GeoCityDatabase – with utf8</h2>
               <h1 className="text-3xl lg:text-4xl font-bold text-blue-600">$1249.99</h1>
               <p className="my-4 text-gray-700 text-sm lg:text-base">
@@ -77,10 +77,8 @@ export default function MajorCities() {
             </div>
           </div>
           
-          <div className="lg:w-1/3 lg:sticky lg:top-10">
-          <div className="w-full lg:w-[70rem]">
+          <div className="w-full lg:w-1/3 mt-8 lg:mt-0">
               <ProductsMenu />
-            </div>
           </div>
         </div>
       </div>
